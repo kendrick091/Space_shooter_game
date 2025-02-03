@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background: #000;
+}
+canvas{
+    background: #111;
+    display: block;
+    margin: auto;
+}
+#shootButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#upButton, #downButton{
+    width: 50px;
+    padding: 19px 10px;
+    font-size: 10px;
+    background: wheat;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.view{
+    display: flex;
+}
+
+/*for the movement button */
+.movement-container{
+    margin: 0;
+    justify-content: center;
+    padding: 35% 0;
+}
+
+.action-container{
+    margin: 0;
+    padding: 35% 0;
+}
+
+.container{
+    padding: 2px;
+    margin: 0;
+    width: 70%;
+    height: 40vh;
+}
+@media screen and (orientation: portriat){
+    body::before{
+        content: "please rotate your device to landscape mode";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        color: white;
+        background: rgba(0,0,0,0.8);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    canvas {
+        display: none;
+    }
+}
